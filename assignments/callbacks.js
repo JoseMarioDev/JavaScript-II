@@ -29,36 +29,28 @@ function getLength(arr, cb) {
   cb(arr.length);
 }
 
-getLength(items, length => {
-  console.log(length);
-});
+getLength(items, length => console.log(length));
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
   cb(arr[arr.length - 1]);
 }
 
-last(items, lastItem => {
-  console.log(lastItem);
-});
+last(items, lastItem => console.log(lastItem));
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
   cb(x + y);
 }
 
-sumNums(1, 2, Sum => {
-  console.log(Sum);
-});
+sumNums(1, 2, Sum => console.log(Sum));
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
   cb(x * y);
 }
 
-multiplyNums(2, 4, Multiply => {
-  console.log(Multiply);
-});
+multiplyNums(2, 4, Multiply => console.log(Multiply));
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
